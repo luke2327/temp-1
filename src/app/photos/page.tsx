@@ -16,7 +16,7 @@ export default async function PhotosPage() {
 
 async function getData() {
   const options = {
-    next: { revalidate: 60 },
+   // next: { revalidate: 60 },
     method: 'POST',
     headers: {
       accept: 'application/json',
