@@ -1,0 +1,31 @@
+.navBar {
+  z-index: 9000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: var(--navbar-height);
+  min-height: var(--navbar-height);
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+.logoText {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.navList {
+  @apply absolute top-0 left-0 transition-all;
+  width: 75vw;
+  height: 100vh;
+  border: 1px solid;
+}
+.header {
+  @apply w-full h-16 flex justify-between items-center px-6;
+  max-width: 78rem;
+}

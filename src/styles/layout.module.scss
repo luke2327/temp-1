@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  height: var(--footer-height);
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  & * {
+    max-width: 78rem;
+  }
+}
+
+.footerHeader {
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+.footerBody {
+  font-size: 0.75rem;
+  color: #797979;
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.footerFooter {
+  font-size: 0.6875rem;
+  color: #848a94;
+}

@@ -1,0 +1,24 @@
+.inputContainer {
+  @apply flex w-full flex-wrap gap-4;
+  label {
+    @apply w-24;
+  }
+  > div {
+    @apply w-full;
+  }
+  input {
+    @apply w-full;
+  }
+}
+.input {
+  > div {
+    @apply w-full;
+  }
+}
+
+.textarea {
+  gap: 0;
+  &:nth-child(3) {
+    padding: 0;
+  }
+}

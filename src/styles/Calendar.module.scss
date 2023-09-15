@@ -1,0 +1,25 @@
+.calendarHeader {
+  @apply w-full flex justify-around bg-gray-200 text-xs;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  .calendarHeaderCell {
+    @apply p-2 h-8 w-10;
+  }
+}
+.calendarBody {
+  @apply w-full  flex flex-col justify-around items-center;
+
+  .row {
+    @apply w-full  flex justify-around;
+    .cell {
+      @apply p-0 h-14 w-10 text-xs;
+      border: 0.1px solid #eee;
+    }
+    .cell-일 {
+      @apply text-red-500;
+    }
+    .cell-토 {
+      @apply text-blue-500;
+    }
+  }
+}
