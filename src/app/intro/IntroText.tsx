@@ -16,7 +16,7 @@ export default function IntroText() {
         <CardHeader className="font-bold text-lg">About Us 🥳</CardHeader>
         <Divider></Divider>
         <CardBody className="text-sm">
-          {INTRO_MESSAGE.map((sentence, idx) => (
+          {INTRO_MESSAGE?.map((sentence, idx) => (
             <p key={idx}>{sentence}</p>
           ))}
         </CardBody>
