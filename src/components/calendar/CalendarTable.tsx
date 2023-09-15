@@ -53,7 +53,7 @@ export default function CalendarTable({ list }: { list: ScheduleItem[] }) {
                 return (
                   <TableCell className="text-tiny w-16">
                     {data.multi_select &&
-                      data.multi_select?.map(
+                      data.multi_select.map(
                         ({ name, key }: { name: string; key: string }) => (
                           <span key={key}>{name}</span>
                         )
