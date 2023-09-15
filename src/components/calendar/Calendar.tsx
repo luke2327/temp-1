@@ -22,7 +22,7 @@ export default function Calendar({ list }: { list: ScheduleItem[] }) {
             {getMoment.year()}년{getMoment.month() + 1}월 스케줄
           </h2>
           <div className={cx(styles.calendarHeader)}>
-            {DAYS?.map((day) => {
+            {DAYS.map((day) => {
               return (
                 <p key={day} className={cx(styles.calendarHeaderCell)}>
                   {day}
@@ -31,7 +31,7 @@ export default function Calendar({ list }: { list: ScheduleItem[] }) {
             })}
           </div>
           <div className={cx(styles.calendarBody)}>
-            {dayArray?.map((week: any, idx: number) => (
+            {dayArray.map((week: any, idx: number) => (
               <CalendarWeek key={idx} week={week}></CalendarWeek>
             ))}
           </div>
@@ -44,14 +44,14 @@ export default function Calendar({ list }: { list: ScheduleItem[] }) {
 function CalendarWeek({ week }: { week: any[] }) {
   return (
     <div className={cx(styles.row)}>
-      {week?.map((day, idx) => {
+      {week.map((day, idx) => {
         return (
           <div key={day.index} className={cx(styles.cell)}>
             <p className={cx(styles[`cell-${DAYS[idx]}`], day.className)}>
               {day.day.split('-')[2]}
             </p>
             <p className={cx('text-xs overflow-hidden', day.className)}>
-              {day.schedules?.map((schedule: any) => {
+              {day.schedules.map((schedule: any) => {
                 return (
                   <Tooltip
                     key={'foreground'}
