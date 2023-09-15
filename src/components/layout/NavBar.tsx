@@ -24,7 +24,7 @@ export default function NavBar() {
         </Link>
 
         <ul className={cx('flex gap-4 md:gap-8 lg:gap-12')}>
-          {NAV_MENU_LIST.map((menu, index) => (
+          {NAV_MENU_LIST?.map((menu, index) => (
             <li key={index}>
               <Link href={menu.href}>
                 <span
