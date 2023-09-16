@@ -1,4 +1,4 @@
-//import { Providers } from './Providers';
+import { Providers } from './Providers';
 import './globals.css';
 import type { Metadata } from 'next';
 import Footer from '@/components/layout/Footer';
