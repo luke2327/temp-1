@@ -1,4 +1,4 @@
-//import { Providers } from './Providers';
+import { Providers } from './Providers';
 import './globals.css';
 import type { Metadata } from 'next';
 import Footer from '@/components/layout/Footer';
@@ -24,11 +24,11 @@ export default function RootLayout({ children }: React.ReactNode) {
   return (
     <html>
       <body className="w-screen">
-       // <Providers>
-         // <NavBar></NavBar>
-          //{children}
-        //</Providers>
-       // <Footer></Footer>
+        <Providers>
+          <NavBar></NavBar>
+          {children}
+        </Providers>
+        <Footer></Footer>
       </body>
     </html>
   );
