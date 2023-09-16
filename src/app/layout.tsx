@@ -20,7 +20,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: React.ReactNode) {
+export default function DashboardLayout({
+  children, // 페이지가 있거나, 중첩된 레이아웃이 있는 경우
+}: {
+  children: React.ReactNode,
+}) {
   return (
     <html>
       <body className="w-screen">
