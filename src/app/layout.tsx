@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: PropsWithChildren) {
+export default function RootLayout({ children }: React.ReactNode) {
   return (
     <html>
       <body className="w-screen">
