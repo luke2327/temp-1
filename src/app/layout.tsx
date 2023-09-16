@@ -20,11 +20,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children, }: { children: React.ReactNode; }) {
+export default function RootLayout({ children }: React.ReactNode) {
   return (
     <html>
       <body className="w-screen">
-        <div>{children}</div>;
+        <Providers>
+          <NavBar></NavBar>
+          {children}
+        </Providers>
+        <Footer></Footer>
       </body>
     </html>
   );
