@@ -4,7 +4,6 @@ import type { Metadata } from 'next';
 import Footer from '@/components/layout/Footer';
 import NavBar from '@/components/layout/NavBar';
 import { PropsWithChildren } from 'react';
-import ReactQueryProvider from "./ReactQueryProvider";
 
 
 export const metadata: Metadata = {
@@ -29,7 +28,11 @@ export default function RootLayout({
   return (
     <html>
       <body className="w-screen">
-        <ReactQueryProvider>{children}</ReactQueryProvider>
+        <Providers>
+          <NavBar></NavBar>
+          {children}
+        </Providers>
+        <Footer></Footer>
       </body>
     </html>
   );
