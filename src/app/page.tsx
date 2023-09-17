@@ -52,5 +52,5 @@ async function getData() {
     return { ...properties, key: id };
   });
 
-  return list;
+  return list || [];
 }
